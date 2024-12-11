@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Settings Starts*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Poppins", serif;
+}
+
+section
+{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Settings Ends*/
+
+/*Navbar starts*/
+
+#navbar
+{
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:100;
+    padding: 8px 80px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    background:black;
+}
+
+.navbar .navbar-brand
+{
+    font-size:25px;
+    font-weight: 800;
+    color: #b9aa90 !important;
+}
+
+#navbarSupportedContent a
+{
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover
+{
+   border-bottom: 2px solid rgba(204, 176, 128, 0.63)
+}
+
+#navbarSupportedContent button
+{
+    background-color: #b9aa90;
+    width:80px;
+    border-radius: 15px;
+}
+/*Navbar ends*/
+
+/* carousel starts*/
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(120, 100, 80, 0.5), rgba(152, 143, 125, 0.7 )); /* Gradient colors */
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 45% !important; 
+    left: 50% !important;
+    transform: translate(-50%, -50%); 
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2; 
+    color: white !important; 
+    width: 100% !important;
+}
+
+
+
+.carousel-image
+{
+    height: 100% !important;
+    position: relative !important;
+    overflow: hidden;
+}
+
+.carousel-control-prev, .carousel-control-next
+{
+    z-index: 10;
+}
+
+/* carousel ends*/
+
+
+/*Home Starts*/
+
+#home
+{
+    background: linear-gradient(rgba(120, 100, 80, 0.5), rgba(152, 143, 125, 0.7)), url(file:///C:/Users/Tamil/Documents/LP/assets/Images/C1.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column; /* 2 sentence in next line*/
+}
+
+#home h1
+{
+    font-size:50px;
+    color:black;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #e0d2ac58;
+}
+
+#home p
+{
+    font-size:18px;
+    color:black;
+}
+
+#home .input-group
+{  
+    width: 40%; 
+    max-width: 500px; 
+    margin-left: 35% !important; 
+    height: 30px !important; 
+    align-items: center !important; 
+    justify-content: center !important;
+    box-shadow: 2px 4px 5px rgba(20, 20, 20, 0.393);
+    z-index: 10 !important;
+}
+
+.signin
+{
+    background-color:#f3e8d2 !important;
+    color:black;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    z-index: 10 !important; 
+}
+
+/*Home Ends*/
+
+/*About Starts*/
+
+#About
+{
+    background: linear-gradient(#e3dad190,#caaa8c);
+
+}
+
+#About h1
+{
+    font-weight: bold;
+    font-size: 50px;
+    color:rgb(82, 59, 43) !important;
+}
+
+#About p
+{
+    color:rgb(150, 94, 76);
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#About .text
+{
+    color:rgb(150, 94, 76);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#About ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+#About ul li 
+{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+#About ul i
+{
+    flex-shrink: 0;
+    font-size: 25px;
+    color: #816954;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#About ul p
+{
+    font-size: 15px;
+    font-weight: 600;
+}
+/*About Ends*/
+
+/*Product Starts*/
+
+#product
+{
+    background: #e5e5e5;
+}
+
+#product h1
+{   
+    font-weight: bold;
+    font-size: 50px;
+    color:rgb(82, 59, 43) !important;
+    
+}
+
+#product img
+{
+    width:200px;
+    height:200px;
+}
+
+.card
+{
+    width:250px;
+    height: 300px;
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,0.3), inset 4px 4px 10px white ;
+    border-radius:20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin:20px 60px;
+}
+
+.card:hover
+{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.3), inset -4px -4px 10px white ;
+    transition: 0.2s;
+}
+/*Product Ends*/
+
+/*Contact Starts*/
+
+#contact
+{
+    background-color: #e3dad190;
+}
+
+#contact h2
+{
+    padding-top: 30px !important;
+}
+
+#contact img
+{
+    height: 100%;
+}
+
+.box
+{
+    width: 80% !important;
+    margin-top: 10px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:40px;
+}
+
+#contact input
+{
+    margin:15px 15px;
+}
+
+#contact textarea
+{
+    margin:15px 15px;
+}
+
+#contact .signin
+{
+    margin:15px 15px;
+    transform: translateX(137%);
+    border-radius:10px;
+}
+
+.small-button
+{
+    font-size: 12px !important;
+    width: auto !important;
+    max-width: 150px;
+}
+/*Contact Ends*/
+
+/*subscribe starts*/
+
+#subscribe
+{
+    background: #caaa8c;
+    overflow: hidden;
+    min-height:60px;
+    flex: 0 0 auto;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+#subscribe h4
+{
+    font-size:20px;
+    font-weight: bold;
+}
+
+#subscribe h5
+{
+    font-size:20px;
+    font-weight: bold;
+}
+
+#subscribe img
+{
+    margin-left: 5px;
+}
+
+.accordion-header .accordion-button
+{
+    background-color: #caaa8c !important;
+    color:white !important;
+}
+
+.accordion-body
+{
+    background-color: #caaa8c !important;
+    color:white !important;
+    border:none !important;
+}
+
+/*subscribe ends*/
+
+/*Modal*/
+.modal-dialog
+{
+    background: #ffffff;
+}
+
+.btn-close
+{
+    background-color: aliceblue;
+}
